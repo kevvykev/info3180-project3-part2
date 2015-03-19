@@ -2,6 +2,10 @@
 # Flask
 # ----------------------
 flask
+Flask-SQLAlchemy
+psycopg2
+Flask-WTF
+flask-marshmallow
 
 
 # ----------------------

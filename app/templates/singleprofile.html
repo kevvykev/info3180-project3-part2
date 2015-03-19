@@ -1,0 +1,70 @@
+<style>
+  body{
+  background-color: green;
+ }
+
+.profile{
+      background:turquoise;
+      border:2px solid black;
+      color: black;
+      float:right;
+      width:400px;
+       margin-top:5px;
+ 
+   }
+  .time{
+  background:turquoise;
+  border:2px solid black;
+  width:400px;
+  height:50px;
+  margin-top:20px;
+  margin-bottom:20px;
+  float:right; 
+  }
+
+  .name{
+  background:turquoise;
+  border:2px solid black;
+  width:400px;
+  float:right;
+    margin-top:10px;
+  }
+  
+  .profilePic{
+   float:left;
+   }
+  
+.container{
+  width:800px;
+  height:800px;
+}
+</style>
+
+
+
+<div class = 'container'>
+ 
+ <div class ='profilePic'>
+   <img src = '/static/filefolder/{{user.image}}' style="width:200px; height:200px;" >
+   </div>
+  
+
+    
+<div class = "name">
+      <h1> {{user.firstname}}  {{user.lastname}}</h1>
+      </div>
+
+<div class='time'>
+     {{user.date}}
+   </div>
+
+   <div class ='profile'> 
+              <p> firstname: {{user.firstname}}</p>
+              <p> lastname: {{user.lastname}}</p>
+               <p> id:{{user.userid}}</p>
+              <p> Sex:{{user.sex}}</p>
+              <p> Age:{{user.age}}10</p>
+              <p> Highscore:{{user.high_score}}</p>
+              <p> TDollar:{{user.TDollars}}</p>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+body{
+  background-color: green;
+  
+}
+
+#profileTableID
+{
+  margin-top:-30%;
+  margin-left:50%;
+}
+.profile{
+      background:blue;
+      border:2px solid black;
+      color: black;
+  
+}
+#time{
+  background:blue;
+  border:2px solid black;
+  background:blue;
+  width:400px;
+  height:40px;
+  }
+
+#profilePic{
+  
+  float:left;
+}
+#name{
+  background:blue;
+  border:2px solid black;
+}
