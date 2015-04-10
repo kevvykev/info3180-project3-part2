@@ -1,0 +1,21 @@
+{% if current_user.is_authenticated() %}
+<ul class="nav nav-pills">
+  
+  {% if request.path == "/profile/"+current_user.userid|string+"/" %}
+  <li role="presentation" class="active"><a href="/">Home</a></li>
+  <li role="presentation"><a href="../../profile/{{current_user.userid}}">Profile</a></li>
+  <li role="presentation"><a href="../../game">Game</a></li>
+    {% else %}
+  <li role="presentation" class="active"><a href="/">Home</a></li>
+  <li role="presentation"><a href="../profile/{{current_user.userid}}">Profile</a></li>
+  <li role="presentation"><a href="../game">Games</a></li>
+  {%endif %}
+  <li role="presentation"><a href="../logout">Logout</a></li>
+</ul>
+{% else %}
+<ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="/">Home</a></li>
+  <li role="presentation"><a href="../register">SignUp</a></li>
+  <li role="presentation"><a href="../login">LogIn</a></li>
+</ul>
+{% endif %}

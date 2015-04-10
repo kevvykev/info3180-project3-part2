@@ -1,0 +1,39 @@
+ body{
+  background-color: green;
+ }
+
+.profile{
+      background:turquoise;
+      border:2px solid black;
+      color: black;
+      float:right;
+      width:400px;
+       margin-top:5px;
+ 
+   }
+  .time{
+  background:turquoise;
+  border:2px solid black;
+  width:400px;
+  height:50px;
+  margin-top:20px;
+  margin-bottom:20px;
+  float:right; 
+  }
+
+  .name{
+  background:turquoise;
+  border:2px solid black;
+  width:400px;
+  float:right;
+    margin-top:10px;
+  }
+  
+  .profilePic{
+   float:left;
+   }
+  
+.container{
+  width:800px;
+  height:800px;
+}

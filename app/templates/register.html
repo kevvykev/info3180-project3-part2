@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+
+{% block js %}
+{% endblock %}
+{% block main %}
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title> Please login </title>
+  </head>
+  <body>
+    
+    <div class = 'cred'>
+      <form action="{{url_for('register')}}" method='post'>
+      <h1>{{form.email(class_='form-control', placeholder='Please enter your Email')}} {{error}}</h1>
+      <h1>{{form.password(class_='form-control', placeholder='Please enter your Password')}} </h1>
+      
+      <div class = 'button'>
+      <h3> {{form.submit}}</h3>
+      </div>
+      </form>
+    </div>
+  </body>
+</html>
+        
+
+{% endblock %}
+
